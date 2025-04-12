@@ -117,7 +117,7 @@ a{
 /* Hover effect for all devices */
 
 /* Mobile-specific styles (up to 576px) */
-@media (max-width:300px) {
+@media (max-width:576px) {
     .photo {
         max-width: 100%; /* Full width on mobile */
         height: 250px; /* Set a fixed height for images on mobile */
