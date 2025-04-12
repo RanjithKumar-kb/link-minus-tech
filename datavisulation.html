@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: #222;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: auto;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #ffcc00;
+            border-color: #ffcc00;
+            color: #222;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        /* Star Rating Styles */
+        .rating-container {
+            margin-top: 30px;
+        }
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .star {
+            color: #ccc;
+            transition: color 0.3s;
+            margin: 0 5px;
+        }
+        .star.selected, .star:hover {
+            color: #ffcc00;
+        }
+        .rating-text {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Data Visualization</h1>
+        <p>
+            At Link Minus, we transform raw data into intuitive and interactive visualizations. Our data visualization solutions help businesses analyze trends, track performance, and make data-driven decisions with confidence.
+        </p>
+        <p>
+            <h3>📌 Our Data Visualization Services:</h3>
+            📈 <span class="highlight">Interactive Dashboards</span><br>
+            📊 <span class="highlight">Custom Data Charts</span> <br>
+            🗺 <span class="highlight">Geospatial Visualization</span><br>
+            📡 <span class="highlight">Real-Time Reporting</span><br>
+            💡 <span class="highlight">AI-Powered Insights</span>
+        </p>
+
+        <!-- Rating System -->
+        <!--<div class="rating-container">
+            <h3>⭐ Rate Our Data Visualization Services</h3>
+            <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <p class="rating-text" id="ratingText">Click on the stars to rate.</p>
+        </div>-->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const stars = document.querySelectorAll("#starRating .star");
+            const ratingText = document.getElementById("ratingText");
+            const ratingKey = "data_viz_service_rating"; // Unique key for this page
+            
+            let savedRating = localStorage.getItem(ratingKey) || 0;
+            updateStars(savedRating);
+
+            stars.forEach(star => {
+                star.addEventListener("click", function() {
+                    let rating = this.getAttribute("data-value");
+                    localStorage.setItem(ratingKey, rating);
+                    updateStars(rating);
+                });
+            });
+
+            function updateStars(rating) {
+                stars.forEach(star => {
+                    let value = star.getAttribute("data-value");
+                    if (value <= rating) {
+                        star.classList.add("selected");
+                    } else {
+                        star.classList.remove("selected");
+                    }
+                });
+
+                // Update rating text
+                if (rating > 0) {
+                    ratingText.textContent = `You rated this ${rating} stars!`;
+                } else {
+                    ratingText.textContent = "Click on the stars to rate.";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
