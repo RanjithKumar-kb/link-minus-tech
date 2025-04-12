@@ -120,8 +120,9 @@ a{
 }
 /* General styles for images */
 .photo {
-    width: 500%; /* Makes the image responsive */
+    width: 100%; /* Makes the image responsive */
     height: auto; /* Keeps aspect ratio intact */
+  max-width:100;
     transition: transform 1.2s ease, box-shadow 1.03s ease; /* Smooth transition for hover effect */
 }
 
@@ -565,10 +566,11 @@ a{
 }
 
 .border{
-    border-width: 2000px;
-    background: black;
-    width: 1510px;
-    padding: 10px;
+    border-width: 1px;
+    /*background: black;*/
+    width: 100px;
+  max-width:100px;
+    /*padding: 10px;*/
 }
 @media (max-width: 768px) {
     .card {
