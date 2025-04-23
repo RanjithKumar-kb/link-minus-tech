@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@1,87.5,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@1,87.5,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 /*body {
   overflow-x: hidden;
-}*/
+}
 
 body{
     background-color: black;
@@ -51,7 +51,7 @@ body{
     display: inline;
 }
 .hero {
-    background:rgb(42, 113, 34); /*linear-gradient(to right, #007bff, #00c6ff);*/
+    background:rgb(42, 113, 34); /*linear-gradient(to right, #007bff, #00c6ff);
     color: white;
     padding: 20px 5px;
     text-align: center;
@@ -122,42 +122,42 @@ a{
     gap: 20px;
     margin-top: 20px;
 }
-/* General styles for images */
+/* General styles for images 
 .photo {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Keeps aspect ratio intact */
+    width: 100%; /* Makes the image responsive 
+    height: auto; /* Keeps aspect ratio intact 
   max-width:100;
-    transition: transform 1.2s ease, box-shadow 1.03s ease; /* Smooth transition for hover effect */
+    transition: transform 1.2s ease, box-shadow 1.03s ease; /* Smooth transition for hover effect 
 }
 
 /* Hover effect for all devices */
 
-/* Mobile-specific styles (up to 576px) */
+/* Mobile-specific styles (up to 576px) 
 @media (max-width:700px) {
     .photo {
-        max-width: 90%; /* Full width on mobile */
-        height: auto; /* Set a fixed height for images on mobile */
+        max-width: 90%; /* Full width on mobile 
+        height: auto; /* Set a fixed height for images on mobile 
     }
 }
 
-/* Tablet and above devices (from 577px to 991px) */
+/* Tablet and above devices (from 577px to 991px) 
 @media (min-width: 577px) and (max-width: 991px) {
     .photo {
         max-width: 100%;
-        height: auto; /* Fixed height for tablet screens */
+        height: auto; /* Fixed height for tablet screens 
     }
 }
 
-/* Larger screens (992px and above) */
+/* Larger screens (992px and above) 
 @media (min-width: 992px) {
     .photo {
         max-width: 100%;
         height: auto; /* Larger height for bigger screens */
     }
 }
-/*contact*/
+/*contact
 #Contact {
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #1a1a1a; /* Dark background 
     color: white;
     text-align: center;
     width: 100%;
@@ -168,8 +168,8 @@ a{
 }
 
 .highlight {
-    color: #ffcc00; /* Highlighted color */
-    text-shadow: 0 0 10px #ffcc00; /* Glow effect */
+    color: #ffcc00; /* Highlighted color 
+    text-shadow: 0 0 10px #ffcc00; /* Glow effect 
 }
 
 .contact-info p, .social-media p {
@@ -178,7 +178,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px; /* Space between icon and text 
 }
 
 .contact-info a, .social-media a {
@@ -194,49 +194,48 @@ a{
 .icon-img {
     width: 30px;
     height: 30px;
-    filter: drop-shadow(0px 0px 5px #ffcc00); /* Glowing effect */
+    filter: drop-shadow(0px 0px 5px #ffcc00); /* Glowing effect 
 }
 .glow-text {
     text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
 }
 .social-media {
     display: flex;
-    justify-content: center; /* Centers the content */
+    justify-content: center; /* Centers the content 
     align-items: center;
     margin-top: 20px;
 }
 
 .social-icon img {
-    width: 60px; /* Set a size for the Instagram logo */
+    width: 60px; /* Set a size for the Instagram logo 
     height: 60px;
-    border-radius: 50%; /* Makes the logo round */
+    border-radius: 50%; /* Makes the logo round 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for the Instagram logo */
+/* Hover effect for the Instagram logo 
 .social-icon:hover img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Glowing effect */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Glowing effect 
 }
 
-/* Responsive design adjustments */
+/* Responsive design adjustments
 @media (max-width: 576px) {
     .social-icon img {
-        width: 50px; /* Smaller logo on mobile */
+        width: 50px; /* Smaller logo on mobile 
         height: 50px;
     }
 }
 
 @media (min-width: 577px) {
     .social-icon img {
-        width: 60px; /* Default size for tablets and desktops */
+        width: 60px; /* Default size for tablets and desktops
         height: 60px;
     }
 }
 
 
 
-/*ourmisson*/
+/*ourmisson
 .ourmisson{
     display: flex;
     flex-direction: column;
@@ -266,7 +265,7 @@ a{
 }
 
 /*constact side*/
-/* Contact Section Styling */
+/* Contact Section Styling 
 .border-box {
     background: white;
     border-radius: 10px;
@@ -275,7 +274,7 @@ a{
     margin: auto;
 }
 
-/* Title Styling */
+/* Title Styling 
 .contact-title {
     font-size: 24px;
     font-weight: bold;
@@ -283,7 +282,7 @@ a{
     margin-bottom: 10px;
 }
 
-/* Social Media & Email */
+/* Social Media & Email 
 .contact-info, .social-media {
     font-size: 18px;
 }
@@ -293,7 +292,7 @@ a{
     margin-right: 10px;
 }
 
-/* Link Styling */
+/* Link Styling 
 .glow-text {
     color: #007bff;
         font-weight: bold;
@@ -306,7 +305,7 @@ a{
         color: #0056b3;
     }
 
-    /* Mobile Responsive */
+    /* Mobile Responsive 
     @media (max-width: 768px) {
         .border-box {
             padding: 15px;
@@ -320,7 +319,7 @@ a{
 
 
 /*about*/
-/* Center the Contact Section */
+/* Center the Contact Section
 #contact {
     text-align: center;
     padding: 40px 20px;
@@ -328,7 +327,7 @@ a{
 
 /* Contact Box with Border */
 .border-box {
- /* Blue Border */
+ /* Blue Border
     
     
     background: black;
@@ -343,7 +342,7 @@ a{
     padding: 40px 20px;
 }
 
-/* Glowing Animation */
+/* Glowing Animation 
 @keyframes glowing {
     0% { box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2); }
     50% { box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.6); }
@@ -363,9 +362,9 @@ a{
     transition: all 0.3s ease-in-out;
 } */
 
-/* Responsive Design */
+/* Responsive Design 
 @media (max-width: 1024px) {
-    .border-box {
+    .border-box {*?
         padding: 80px;
         border-radius: 80px;
     }
@@ -378,65 +377,65 @@ a{
     }
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     .border-box {
         padding: 40px;
         border-radius: 40px;
-    }
+    }*/
 }
 
-/* Contact Title */
+/* Contact Title 
 .contact-title {
     font-size: 24px;
     font-weight: bold;
     color: #007bff;
     margin-bottom: 10px;
-}
+}*/
 
 
-/* Contact Title */
+/* Contact Title 
 .contact-title {
     font-size: 24px;
     font-weight: bold;
     color: #007bff;
     margin-bottom: 10px;
-}
+}*/
 
-/* Highlighted Text */
+/* Highlighted Text 
 .highlight {
     color: #007bff;
     font-weight: bold;
 }
 
-/* Social Media & Contact Info */
+/* Social Media & Contact Info 
 .contact-info, .social-media {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
+}*/
 
-/* Icons */
+/* Icons 
 .icon-img {
     max-width: 30px;
     height: auto;
     margin-right: 10px;
 }
 
-/* Responsive Glow Text */
+/* Responsive Glow Text 
 .glow-text {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-}
+}*/
 
-.glow-text:hover {
+/*.glow-text:hover {
     color: #0056b3;
     text-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments 
 @media (max-width: 768px) {
     .contact-info, .social-media {
         flex-direction: column;
@@ -446,12 +445,12 @@ a{
     .icon-img {
         max-width: 25px;
     }
-}
+}*/
 
 
-/* General Styling */
+/* General Styling 
 
-#about {
+/*#about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -464,13 +463,13 @@ a{
     font-size: 32px;
     margin-top: -10px;
     
-}
-.home-info h2 span::before{
+}*/
+/*.home-info h2 span::before{
     content: attr(data-text);
     position: absolute;
     width: 0;
-    /*border-radius: 2px solid #7cf03d;*/
-    /*color: #7cf03d;*/
+    /*border-radius: 2px solid #7cf03d;
+    /*color: #7cf03d;
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
@@ -500,11 +499,11 @@ a{
     25%,100%{
         display: none;
     }
-}
+}*/
 
 
 
-/* Social Icons Styling */
+/* Social Icons Styling 
 .social-icons {
     margin-top: 15px;
 }
@@ -515,13 +514,13 @@ a{
     margin: 0 10px;
     color: #333;
     transition: color 0.3s ease-in-out;
-}
+}*/
 
-.social-icons a:hover {
+/*.social-icons a:hover {
     color: #007bff;
 }
 
-/* Image Container */
+/* Image Container 
 .home-img {
     position: relative;
     display: flex;
@@ -531,22 +530,22 @@ a{
     right: 50px;
 }
 
-/* Responsive Image with Fixed Border Radius */
+/* Responsive Image with Fixed Border Radius 
 .responsive-img {
-    width: 250px; /* Adjust size */
+    width: 250px; /* Adjust size 
     height: 200px;
-    border-radius: 50%; /* Circular Image */
-    border: 5px solid #ffffff; /* Inner border */
-    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.7); /* Green Glow */
+    border-radius: 50%; /* Circular Image 
+    border: 5px solid #ffffff; /* Inner border 
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.7); /* Green Glow 
     transition: box-shadow 0.3s ease-in-out;
-}
+}*/
 
-/* Image Hover Glow Effect */
+/* Image Hover Glow Effect 
 .responsive-img:hover {
     box-shadow: 0px 0px 25px rgba(0, 255, 0, 1);
 }
 
-/* Responsive Design for Mobile and Tablets */
+/* Responsive Design for Mobile and Tablets 
 @media (max-width: 768px) {
     .animated-text {
         font-size: 20px;
@@ -556,9 +555,9 @@ a{
         width: 150px;
         height: 150px;
     }
-}
+}*/
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     
   .home-info, .home-img {
         flex-direction: column;
@@ -573,22 +572,22 @@ a{
 
 .border{
     border-width: 1px;
-    /*background: black;*/
+    /*background: black;
     width: 100px;
   max-width:100px;
-    /*padding: 10px;*/
-}
-@media (max-width: 768px) {
+    /*padding: 10px;
+}*/
+/*@media (max-width: 768px) {
     .card {
-        width: 90% !important; /* Make the form fit smaller screens */
+        width: 90% !important; /* Make the form fit smaller screens 
     }
 
     .new {
-        font-size: 20px; /* Adjust text size for mobile */
+        font-size: 20px; /* Adjust text size for mobile 
     }
 
     #submit {
-        font-size: 16px; /* Reduce button size */
+        font-size: 16px; /* Reduce button size 
         padding: 8px;
     }
 }
@@ -605,4 +604,4 @@ a{
 }
 li:hover{
     color:white;
-}
+}*/
